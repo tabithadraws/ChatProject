@@ -21,6 +21,6 @@ function setup() {
 
 function greet() {
   var name = input.value();
-  greeting.html('hello '+name+'!');
+  greeting.html('goodbye'+name+'!');
   input.value('');
 }
