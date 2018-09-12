@@ -6,22 +6,21 @@ function setup() {
   createCanvas(710, 400);
 
   input = createInput();
-  input.position(20, 30);
+  input.position(20, 65);
 
   button = createButton('submit');
   button.position(input.x + input.width, 65);
   button.mousePressed(greet);
 
-  greeting = createElement('h2', 'Would you rather...');
+  greeting = createElement('h2', 'What would you like to do?');
   greeting.position(20, 5);
 
   textAlign(CENTER);
   textSize(50);
-    
 }
 
 function greet() {
   var name = input.value();
-  greeting.html('goodbye'+name+'!');
+  greeting.html('You would like to '+name+'!');
   input.value('');
 }
